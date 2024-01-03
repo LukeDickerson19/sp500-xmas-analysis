@@ -230,9 +230,11 @@ all years
 
 ```
 
-SP500 daily price data back to 1928 was aquired by manually highlighting and copy/pasting it from [this website](https://finance.yahoo.com/quote/%5EGSPC/history?period1=-1325462400&period2=1704067200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true), and then cleaning it up a little with pandas. See file sp500_daily_price_data_from_1928-01-01_to_2024-01-01.csv.
-note from website:
-"*Close price adjusted for splits.**Adjusted close price adjusted for splits and dividend and/or capital gain distributions."
+SP500 daily price data back to 1928 was aquired by manually highlighting and copy/pasting it from [this website](https://finance.yahoo.com/quote/%5EGSPC/history?period1=-1325462400&period2=1704067200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true), and then cleaning it up a little with python pandas.
+
+See file: `sp500_daily_price_data_from_1928-01-01_to_2024-01-01.csv`
+
+note from website: "*Close price adjusted for splits.**Adjusted close price adjusted for splits and dividend and/or capital gain distributions."
 
 I created a script called plot_price_data.py that allows you to easily zoom in on any timeframe. It ended up being easier to test it programatically though so I created another script called test_grinch.py, and used it to output the tables above.
 
